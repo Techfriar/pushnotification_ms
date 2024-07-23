@@ -1,10 +1,6 @@
 # Base image
 FROM node:lts-alpine
 
-# Env
-ENV PORT=3001
-ENV HOST=0.0.0.0
-
 # Set working directory
 WORKDIR /app
 
