@@ -7,7 +7,7 @@ WORKDIR /app
 # Install dependencies
 COPY package*.json ./
 
-RUN yarn install 
+RUN npm install 
 
 # Copy the backend code into the container
 COPY . .
