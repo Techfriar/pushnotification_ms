@@ -13,7 +13,7 @@ RUN npm install
 COPY . .
 
 # Expose port for the Node.js application
-EXPOSE 3001
+EXPOSE 5000
 
 # Set default command to start the Node.js application
 CMD ["node", "server.js"]

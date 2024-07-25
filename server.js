@@ -6,7 +6,7 @@ import configureRoutes from "./src/routes/routes.js";
 // Load environment variables from .env file
 dotenv.config();
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 5000;
 const hostname = process.env.HOST || "localhost";
 
 const app = express();
