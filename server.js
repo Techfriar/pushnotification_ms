@@ -7,7 +7,7 @@ import configureRoutes from "./src/routes/routes.js";
 dotenv.config();
 
 const port = process.env.PORT || 5000;
-const hostname = process.env.HOST || "localhost";
+const hostname = process.env.HOST || "0.0.0.0";
 
 const app = express();
 
