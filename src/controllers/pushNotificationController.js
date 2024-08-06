@@ -49,6 +49,7 @@ export default class PushNotificationController {
           body: validatedData.body, // Notification body
         },
         tokens: validatedData.fcm_tokens, // List of FCM tokens to send notification to
+        data: validatedData.data, // Map of data
       };
 
       // Send the notification using Firebase Admin SDK
