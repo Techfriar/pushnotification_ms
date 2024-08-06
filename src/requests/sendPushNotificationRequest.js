@@ -8,7 +8,7 @@ const schema = Joi.object({
   title: Joi.string().required(),
   body: Joi.string().required(),
   fcm_tokens: Joi.array().items(Joi.string()).required(),
-  data: Joi.object().pattern(Joi.string(), Joi.string()) // Add this line for the data property
+  data: Joi.object().pattern(Joi.string(), Joi.string())
 });
 
 export default class SendPushNotificationRequest {
