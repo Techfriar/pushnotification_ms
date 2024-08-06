@@ -14,6 +14,7 @@ export default class PushNotificationController {
    *    - `title`: The title of the notification.
    *    - `body`: The body of the notification.
    *    - `tokens`: An array of FCM registration tokens indicating the devices to which the notification should be sent.
+   *    - `data`: A map of custom key-value pairs to be sent along with the notification.
    * 4. **Sending Notification**: Sends the notification using the Firebase Admin SDK's `sendEachForMulticast` method, which supports sending a message to multiple tokens.
    * 5. **Response Handling**:
    *    - If the notification is sent successfully, responds with a status of 200 and a success message along with the response data from Firebase.
@@ -49,6 +50,7 @@ export default class PushNotificationController {
           body: validatedData.body, // Notification body
         },
         tokens: validatedData.fcm_tokens, // List of FCM tokens to send notification to
+        data: validatedData.data, // Map of custom key-value pairs
       };
 
       // Send the notification using Firebase Admin SDK
